@@ -21,6 +21,8 @@ private slots:
 //void on_pButton_toggle(bool);
 void on_pButton_toggled(bool checked);
 
+void on_comboBox_activated(int index);
+
 private:
     Ui::MainWindow *ui;
 };
