@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+
 ui->rButton->setText("Кнопка1");
 ui->rButton_2->setText("Кнопка2");
 ui->pButton->setText("Кнопка ");
@@ -23,10 +24,7 @@ for(int i=1; i<11; ++i)
 {
 ui->LW->addItem("Элемент списка № "+QString::number(i));
 ui->comboBox->addItem("Элемент"+QString::number(i));
-
 }
-
-
 }
 MainWindow::~MainWindow()
 {
@@ -35,22 +33,17 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_LE_textChanged(const QString &arg1){}
 
-int i=-10;
-
-
-
 void MainWindow::on_pButton_toggled(bool checked)
 {
-    if(checked)
-        ui->prBar->setValue(i);
-        i+=5;
-        if(i==110) i=0;
+
+        ui->prBar->setValue(i_prbar);
+        i_prbar+=10;
+        if(i_prbar==110) i_prbar=0;
 }
 
 
 void MainWindow::on_comboBox_activated(int index)
 {
     ui->LW->addItem("Элемент списка № "+QString::number(index+1));
-
 }
 

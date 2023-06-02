@@ -12,6 +12,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    int i_prbar=0;
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
