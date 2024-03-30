@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>526</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="6" column="0">
+         <widget class="QLabel" name="pass">
+          <property name="text">
+           <string>Пароль</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="lb_name_bd">
+          <property name="text">
+           <string>Имя БД</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="port">
+          <property name="text">
+           <string>Порт</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="lineEdit_3"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="login">
+          <property name="text">
+           <string>Логин</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="QSpinBox" name="spinBox"/>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLineEdit" name="lineEdit_4"/>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="lb_name_chost">
+          <property name="text">
+           <string>Имя хоста</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="inputMethodHints">
+           <set>Qt::ImhFormattedNumbersOnly</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pb_clear">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>2</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>3</height>
+           </size>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string>Очистить `</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>560</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pb_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_3</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>430</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_4</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>475</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>360</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>spinBox</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
